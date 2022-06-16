@@ -1,0 +1,41 @@
+.resolucion{
+    width: 99%;
+    text-align: center;
+}
+/*xs*/
+@media screen and (max-width: 800px){
+    .texto_1 img{ display: none;}
+}
+
+
+
+/* ------------------------------------------------------------------- */
+
+.titulo{
+    font-size: 50px;
+    text-align: right;
+    padding: 15px;
+    background-color: aqua;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ------------------------------------------------------------------- */
+.texto_1{
+    background-color: rgb(165, 0, 230);
+    font-size: 50px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/* ------------------------------------------------------------------- */
+
+.texto_1 img{
+    width: 500px;
+    height: 300px;
+    align-items: center;
+}
+
+/* ------------------------------------------------------------------- */
+
+body{
+    background: url(/img/fondo.jpg)
+}

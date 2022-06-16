@@ -1,0 +1,75 @@
+html{height: 100%;}
+body{
+    background-color: aqua;
+}
+
+
+/* ------------------------------------------------------------------- */
+
+.titulo{
+    font-size: 50px;
+    text-align: right;
+    padding: 15px;
+    background-color: aqua;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    margin: 50px auto;
+    width: 400px;
+    padding: 30px;
+    background: rgb(34, 203, 241);
+    border-radius: 10px;
+}
+
+.contenedor h2{
+    margin: 0 0 30px;
+    padding: 0;
+    font-size: 30px;
+    color: rgb(248, 102, 204);
+    text-align: center;
+}
+
+/* barras de texto */
+.contenedor .elemento label {
+color: rgb(128, 128, 128);
+}
+/* mensaje con info erronea */
+.contenedor .elemento label.error {
+    margin: 0px;
+    display: block;
+    color: red;
+    padding: 0px;
+    }
+/* barras para ingresar la info */
+.contenedor .elemento input{
+    width: 100%;
+    padding: 10px 0;
+    color: black;
+    background: transparent;
+    border: none;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+/* barras para ingresar la info con datos erroneos */
+.contenedor .elemento input.error{
+    border: 1px solid red;
+    color: red  ;
+}   
+
+/* el boton */
+.contenedor .elemento input[type="submit"]{
+    background-color: rgb(39, 56, 152);
+    border: none;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 30px;
+    color: white;
+}

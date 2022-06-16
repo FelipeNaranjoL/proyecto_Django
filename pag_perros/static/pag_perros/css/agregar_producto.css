@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+}
+
+form{
+    margin: 50px auto;
+    width: 400px;
+    padding: 30px;
+    background: rgb(34, 203, 241);
+    border-radius: 10px;
+}
+
+input{
+    width: 100%;
+    padding: 10px 0;
+    color: black;
+    background: white;
+    border: none;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+button[type="submit"]{
+    background-color: rgb(121, 49, 184);
+    border: none;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 30px;
+    color: black;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mundo Animal</title>
+  <link rel="icon" type="img/png" href="/img/logo/logo_pag.jpg">
+  {% load static%}
+  <link rel="stylesheet" href="{%static 'pag_perros/css/alimentos.css'%}" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- navegador de la pagina -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">MundoAnimal</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="{% url 'home'%}">Juguetes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="{% url 'alimentos'%}">Alimentos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="{% url 'formulario'%}">Formulario</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="{% url 'pelis'%}">Pelis</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Acciones
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="{% url 'listar'%}">Listar</a></li>
+                <li><a class="dropdown-item" href="{% url 'agregar_producto'%}">Agregar</a></li>
+              </ul>
+            </li>
+            <!-- {% comment %} <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li> {% endcomment %} -->
+          </ul>
+          <!-- {% comment %} <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> {% endcomment %} -->
+        </div>
+      </div>
+    </nav>
+    <br><br>
+    <!--Carrusel de la pagina-->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'pag_perros/img/carrusel/foto2.jpg'%}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'pag_perros/img/carrusel/foto3.jpg'%}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'pag_perros/img/carrusel/foto1.jpg'%}" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br/>
+  <!--Barra de texto-->
+
+  <div id="barra_2">
+    <ul>
+      <li>LOS MEJORES ALIMENTOS PARA EL CONSENTIDO DE LA CASA</li>
+    </ul>
+  </div>
+
+  <!--Contenido de la oferta-->
+  <div class="contenedor">
+    <div class="item">
+      <div class="oferta">
+        <div class="oferta_pc">
+          <h1 class="titulo_oferta">
+            OFERTA POR TIEMPO LIMITADO!!!
+          </h1>
+          <img class="pc_oferta" src="{% static 'pag_perros/img/pagina_alimentos/plato.jpg'%}" alt="imagen de pc" />
+          <h1 class="nombre_oferta">Fuente de alimentos personalizado </h1>
+          <p>
+            Demuestrale a tu mascota lo mucho que la quieres <br />
+            Estanpa su nombre o algun mensaje de afecto para el cada ves que vaya a comer <br />
+            Incluso puedes poner una imagen<br /> 
+            Envio gratuito incluido
+          </p>
+          <h1 class="precio_oferta"><a href="no_producto.html">Precio:$6.989</a></h1>
+        </div>
+      </div>
+    </div>
+    <div class="item2">
+      <div class="contenido_1">
+        <!--Contenido producto 1-->
+        <div class="pc_1">
+          <h1 class="titulo_barra_1">Cannes Premium</h1> <br> br
+          <img src="{% static 'pag_perros/img/pagina_alimentos/comida_perro1.jpg'%}" alt="" />
+          <p>-Caracteristicas:</p>
+          <p>-Marca:Cannes</p>
+          <p>-Comida: Perros</p>
+          <p>-Comida: Adultos</p>
+          <p>-Sabores: Carnes,pollo</p> <br>
+          <h1><a href="no_producto.html" class="precio_1">Precio:$22.999</a></h1>
+        </div>
+      </div>
+    </div>
+    <div class="item3">
+      <div class="contenido_2">
+        <!--Contenido producto 2-->
+        <div class="pc_2">
+          <h1 class="titulo_barra_2">Purina Felix Classic</h1>
+          <img src="{% static 'pag_perros/img/pagina_alimentos/comida_gato1.jpeg'%}" alt="" />
+          <p>-Caracteristicas:</p>
+          <p>-Marca: Purina</p>
+          <p>-Comida: Gatos</p>
+          <p>-Comida: Adultos</p>
+          <h1 class="precio_2"><a href="no_producto.html">Precio:$9.999</a></h1>
+        </div>
+      </div>
+    </div>
+    <div class="item4">
+      <div class="contenido_3">
+        <!--Contenido producto 3-->
+        <div class="pc_3">
+          <h1 class="titulo_barra_3">Almacenador de comida</h1>
+          <img src="{% static 'pag_perros/img/pagina_alimentos/dispensadores.jpg'%}" alt="" />
+          <p>-Caracteristicas:</p>
+          <p>-Espacio: 1kg de comida</p>
+          <p>-Comida: Gatos y perros</p>
+          <p>-Uso : No dejarla en un lugar alto</p>
+          <h1 class="precio_3"><a href="no_producto.html">Precio:$16.999</a></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- script carrusel -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
