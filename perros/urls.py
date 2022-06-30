@@ -23,6 +23,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # esto proviene de la app pag_perros
     path('',include('pag_perros.urls')),
+    #http://127.0.0.1:8000/accounts/login/
+    path('accounts/', include('django.contrib.auth.urls')),
+    
 ]
 
 

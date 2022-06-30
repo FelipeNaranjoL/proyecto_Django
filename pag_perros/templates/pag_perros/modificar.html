@@ -13,24 +13,28 @@
 <body>
     <!-- navegador de la pagina -->
     <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">MundoAnimal</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">MundoAnimal</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="{% url 'home'%}">Juguetes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="{% url 'alimentos'%}">Alimentos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="{% url 'formulario'%}">Formulario</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="{% url 'pelis'%}">Pelis</a>
+            </li>
+            {%if user.is_authenticated%}
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{% url 'home'%}">Juguetes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{% url 'alimentos'%}">Alimentos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{% url 'formulario'%}">Formulario</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{% url 'pelis'%}">Pelis</a>
+                <a class="nav-link active" aria-current="page" href="#">Hola {{ user.username }}</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -39,20 +43,25 @@
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="{% url 'listar'%}">Listar</a></li>
                   <li><a class="dropdown-item" href="{% url 'agregar_producto'%}">Agregar</a></li>
+                    <li><a class="dropdown-item" href="{% url 'logout' %}">Cerrar sesion</a></li>
+                  {%else%}
+                  <a class="nav-link active" aria-current="page" href="{% url 'login' %}">Iniciar sesion</a>
+                  <a class="nav-link active" aria-current="page" href="{% url 'registro' %}">Registrate</a>
+                  {%endif %}
                 </ul>
               </li>
-              <!-- {% comment %} <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li> {% endcomment %} -->
-            </ul>
-            <!-- {% comment %} <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form> {% endcomment %} -->
-          </div>
+            <!-- {% comment %} <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li> {% endcomment %} -->
+          </ul>
+          <!-- {% comment %} <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> {% endcomment %} -->
         </div>
-      </nav>
-      <br><br>
+      </div>
+    </nav>
+    <br><br>
       <h1>Editar alimento para mascotas</h1>
 
 
