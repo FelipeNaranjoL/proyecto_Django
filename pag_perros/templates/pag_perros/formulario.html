@@ -48,10 +48,19 @@
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="{% url 'listar'%}">Listar</a></li>
                   <li><a class="dropdown-item" href="{% url 'agregar_producto'%}">Agregar</a></li>
-                    <li><a class="dropdown-item" href="{% url 'logout' %}">Cerrar sesion</a></li>
+                  <li><a class="dropdown-item" href="{% url 'logout' %}">Cerrar sesion</a></li>
+                </ul>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  colaboradores
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="{% url 'listaruser'%}">Listar colaboradores</a></li>
+                    <li><a class="dropdown-item" href="{% url 'agregarusuario'%}">Agregar colaboradores</a></li>
+                  </ul>
                   {%else%}
-                  <a class="nav-link active" aria-current="page" href="{% url 'login' %}">Iniciar sesion</a>
-                  <a class="nav-link active" aria-current="page" href="{% url 'registro' %}">Registrate</a>
+                    <a class="nav-link active" aria-current="page" href="{% url 'login' %}">Iniciar sesion</a>
+                    <a class="nav-link active" aria-current="page" href="{% url 'registro' %}">Registrate</a>
                   {%endif %}
                 </ul>
               </li>

@@ -39,6 +39,7 @@ def no_producto(request):
 def pelis(request):
     return render(request,'pag_perros/pelis.html')
 
+#crud
 def listar(request):
     alimentos = agregar.objects.all()
     data = {'alimentos' : alimentos}
