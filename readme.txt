@@ -1,4 +1,4 @@
-> [!NOTE]
+> .[!NOTE].
 > Hola mundo
 
 Integrantes:
