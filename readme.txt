@@ -1,3 +1,6 @@
+> [!NOTE]
+> Hola mundo
+
 Integrantes:
 Felipe Naranjo
 Cristobal Flores
