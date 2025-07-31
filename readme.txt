@@ -1,5 +1,15 @@
-> .[!NOTE].
-> Hola mundo
+:::important
+Aquí tienes un consejo
+:::
+
+:::warning
+Aquí tienes un consejo
+:::
+
+:::caution
+Aquí tienes un consejo
+:::
+
 
 Integrantes:
 Felipe Naranjo
