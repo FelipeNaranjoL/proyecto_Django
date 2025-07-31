@@ -1,14 +1,14 @@
-:::important
-Aquí tienes un consejo
-:::
+> [!IMPORTANT]
+> Aquí tienes un consejo importante
 
-:::warning
-Aquí tienes un consejo
-:::
+> [!WARNING]
+> Aquí tienes una advertencia
 
-:::caution
-Aquí tienes un consejo
-:::
+> [!CAUTION]
+> Aquí tienes una precaución
+
+> [!TIP]
+> Aquí tienes un tip
 
 
 Integrantes:
